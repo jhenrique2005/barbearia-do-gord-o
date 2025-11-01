@@ -1,0 +1,129 @@
+/* Layout */
+
+/* Variáveis */
+:root {
+    --azulEscuro: #21252e;
+    --amarelo: #decc63;
+    --preto: #0c0b0b;
+    --cinzaclaro: #898a89;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Fim Layout */
+
+
+/* Smarthphone Portrait */
+header {
+    height: 65px;
+    background-color: var(--azulEscuro);
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    color: var(--amarelo);
+    font-size: 3rem;
+    position: fixed;
+    right: 20px;
+}
+
+nav ul {
+    height: 100vh;
+    background-color: var(--azulEscuro);
+    position: fixed;
+    top: 65px;
+    right: -65%;
+    width: 65%;
+    transition: all 0.5s;
+}
+
+/* Ação do menu checkbox */
+#check:checked ~ ul {
+    right: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--amarelo);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+/* Fim mobile */
+
+
+/* Tablet Portrait */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        background-color: var(--azulEscuro);
+    }
+}
+
+/* Smarthphone Landscape */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        background-color: var(--amarelo);
+    }
+
+    nav ul {
+        width: 40%;
+        right: -40%;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        background-color: var(--azulEscuro);
+    }
+}
+
+/* Notebook / PC */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        background-color: var(--azulEscuro);
+    }
+}
+
+/* Full HD / 4K */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        background-color: var(--amarelo);
+    }
+}
+
