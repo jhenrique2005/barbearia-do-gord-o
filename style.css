@@ -82,19 +82,20 @@ nav ul li a {
 /* Fim mobile */
 
 
-/* Tablet Portrait */
+/* smatohone landscape */
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
         background-color: var(--azulEscuro);
     }
 }
+/*fim smatphone landscape*/
 
-/* Smarthphone Landscape */
+/* tablet Portait */
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
-        background-color: var(--amarelo);
+        background-color: var(--azulEscuro);
     }
 
     nav ul {
@@ -102,6 +103,7 @@ nav ul li a {
         right: -40%;
     }
 }
+/*Fim tablet portait*/
 
 /* Tablet Landscape */
 @media (min-width: 992px) {
@@ -110,20 +112,56 @@ nav ul li a {
         background-color: var(--azulEscuro);
     }
 }
-
-/* Notebook / PC */
+/* Notebook / PC >>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
+
+    /* Layout */
     .container {
-        max-width: 1140px;
-        background-color: var(--azulEscuro);
+        max-width: 1140px; 
+        justify-content: space-between;       
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 100px;
+    }
+
+    #logo img {
+        width: 194px;
+        height: 194px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a:hover {
+        color: var(--dourado);
     }
 }
+/* Fim - Notebook / PC <<<<<<<<<<<< */
+
 
 /* Full HD / 4K */
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
-        background-color: var(--amarelo);
+        background-color: var(--azulEscuro);
     }
 }
+
+/**/
 
