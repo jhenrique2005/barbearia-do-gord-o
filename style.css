@@ -1,167 +1,203 @@
-/* Layout */
+/* ================= Layout ================= */
 
 /* Variáveis */
 :root {
-    --azulEscuro: #21252e;
-    --amarelo: #decc63;
-    --preto: #0c0b0b;
-    --cinzaclaro: #898a89;
+  --azulEscuro: #21252e;
+  --amarelo: #decc63;
+  --preto: #0c0b0b;
+  --cinzaclaro: #898a89;
 }
 
-/* CSS Reset */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
 
-/* Fim Layout */
+/* Botão */
+.btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--azulEscuro);
+  padding: 10px 40px;
+  color: beige;
+  border-radius: 25px;
+  border: 2px solid var(--cinzaclaro);
+}
 
+/* ================= Mobile / Smartphone ================= */
 
-/* Smarthphone Portrait */
 header {
-    height: 65px;
-    background-color: var(--azulEscuro);
+  height: 65px;
+  background-color: var(--azulEscuro);
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-    margin-left: 30px;
-    border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 30px;
+  border-radius: 50%;
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
 label {
-    color: var(--amarelo);
-    font-size: 3rem;
-    position: fixed;
-    right: 20px;
+  color: var(--amarelo);
+  font-size: 3rem;
+  position: fixed;
+  right: 20px;
 }
 
+/* Menu */
 nav ul {
-    height: 100vh;
-    background-color: var(--azulEscuro);
-    position: fixed;
-    top: 65px;
-    right: -65%;
-    width: 65%;
-    transition: all 0.5s;
+  height: 100vh;
+  background-color: var(--azulEscuro);
+  position: fixed;
+  top: 65px;
+  right: -65%;
+  width: 65%;
+  transition: all 0.5s;
 }
 
-/* Ação do menu checkbox */
+/* Ação do menu */
 #check:checked ~ ul {
-    right: 0px;
+  right: 0;
 }
 
 nav ul li {
-    list-style: none;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid var(--amarelo);
+  list-style: none;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--amarelo);
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--amarelo);
+  text-decoration: none;
+  color: var(--amarelo);
 }
 
-/* Fim mobile */
+/* ================= Principal ================= */
 
+main {
+  height: 50vh;
+  background: url(img/barber-shop-5212059_1920.jpg) center/cover;
+}
 
-/* smatohone landscape */
+main .container {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  color: rgb(214, 214, 79);
+  font-family: "koulen", sans-serif;
+  text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: rgb(230, 229, 203);
+  font-size: 1.85rem;
+  font-weight: 900;
+  text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= Smartphone Landscape ================= */
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-        background-color: var(--azulEscuro);
-    }
+  .container {
+    max-width: 570px;
+  }
 }
-/*fim smatphone landscape*/
 
-/* tablet Portait */
+/* ================= Tablet Portrait ================= */
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-        background-color: var(--azulEscuro);
-    }
+  .container {
+    max-width: 720px;
+  }
 
-    nav ul {
-        width: 40%;
-        right: -40%;
-    }
+  nav ul {
+    width: 40%;
+    right: -40%;
+  }
+
+  main {
+    height: 75vh;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
 }
-/*Fim tablet portait*/
 
-/* Tablet Landscape */
+/* ================= Tablet Landscape ================= */
 @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-        background-color: var(--azulEscuro);
-    }
+  .container {
+    max-width: 960px;
+  }
 }
-/* Notebook / PC >>>>>>>>>>>>>>>>>>> */
+
+/* ================= Desktop / Notebook ================= */
 @media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    justify-content: space-between;
+  }
 
-    /* Layout */
-    .container {
-        max-width: 1140px; 
-        justify-content: space-between;       
-    }
+  header {
+    height: 100px;
+  }
 
-    /* Cabeçalho */
-    header {
-        height: 100px;
-    }
+  #logo img {
+    width: 194px;
+    height: 194px;
+  }
 
-    #logo img {
-        width: 194px;
-        height: 194px;
-    }
+  label {
+    display: none;
+  }
 
-    label {
-        display: none;
-    }
+  nav ul {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 20px;
+  }
 
-    nav ul {
-        position: static;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        margin-top: 20px;
-    }
+  nav ul li {
+    border: 0;
+    float: left;
+  }
 
-    nav ul li {
-        border: 0;
-        float: left;
-    }
+  nav ul li a:hover {
+    color: var(--azulEscuro);
+  }
 
-    nav ul li a:hover {
-        color: var(--azulEscuro);
-    }
+  main {
+    height: 85vh;
+  }
 }
-/* Fim - Notebook / PC <<<<<<<<<<<< */
 
-
-/* Full HD / 4K */
+/* ================= Full HD / 4K ================= */
 @media (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
-        background-color: var(--azulEscuro);
-    }
+  .container {
+    max-width: 1320px;
+  }
 }
-
-/**/
-
