@@ -74,7 +74,7 @@ nav ul {
 }
 
 /* Ação do menu */
-#check:checked ~ ul {
+#check:checked~ul {
   right: 0;
 }
 
@@ -113,10 +113,11 @@ main h1 {
 
 main h2 {
   color: rgb(230, 229, 203);
-  font-size: 1.85rem;
+  font-size: 1.90rem;
   font-weight: 900;
   text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
     0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10%;
 }
 
 /* ================= Smartphone Landscape ================= */
@@ -142,15 +143,32 @@ main h2 {
   }
 
   main h1 {
-    font-size: 2.5rem;
+    font-size: 3.90rem;
   }
+
+  main h2 {
+    font-size: 2.90rem;
+    margin-bottom: 4.90rem;
+  }
+
 }
 
 /* ================= Tablet Landscape ================= */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+
   }
+
+  main h1 {
+    font-size: 5.90rem;
+  }
+
+  main h2 {
+    font-size: 4.90rem;
+    margin-bottom: 6.90rem;
+  }
+
 }
 
 /* ================= Desktop / Notebook ================= */
