@@ -120,11 +120,87 @@ main h2 {
   margin-bottom: 10%;
 }
 
+
+/*Destaque*/
+#destaque {
+  padding: 50px 10px;
+  background: url(./img/fundo.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+#destaque .container {
+
+  flex-direction: column;
+}
+
+#hero {
+  text-align: center;
+
+}
+
+#hero img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+#hero-text h2 {
+  margin-bottom: 15px;
+  color: aliceblue;
+}
+
+#hero-text p {
+  color: aliceblue;
+
+
+
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.topics p {
+  margin-left: 15px;
+  color: aliceblue;
+}
+
+
+
 /* ================= Smartphone Landscape ================= */
 @media (min-width: 576px) {
   .container {
     max-width: 570px;
   }
+
+  /*Destaque*/
+  #destaque {
+    padding: 50px 0px;
+  }
+
+  #destaque .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #hero {
+    text-align: left;
+  }
+
+  #hero img {
+    width: 200px;
+    height: 250px;
+    margin: 0px 50px 0px 0px;
+  }
+
+  .topic {
+    display: none;
+  }
+
 }
 
 /* ================= Tablet Portrait ================= */
@@ -150,6 +226,10 @@ main h2 {
     font-size: 2.90rem;
     margin-bottom: 4.90rem;
   }
+
+
+
+
 
 }
 
@@ -211,7 +291,25 @@ main h2 {
   main {
     height: 85vh;
   }
+
+  /*Destaque*/
+  #destaque {
+
+    background-attachment: fixed;
+  }
+
+  #hero img {
+    width: 400px;
+    height: 470px;
+  }
+
+  .topic {
+
+    display: flex;
+  }
+
 }
+
 
 /* ================= Full HD / 4K ================= */
 @media (min-width: 1400px) {
