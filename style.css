@@ -123,8 +123,8 @@ main h2 {
 
 /*Destaque*/
 #destaque {
-  padding: 50px 10px;
-  background: url(./img/fundo.jpg);
+  padding: 40px 10px;
+  background: url(./img/ultima.jpg );
   background-size: cover;
   background-position: center;
 
@@ -170,12 +170,93 @@ main h2 {
 }
 
 
+/*Onepage*/
+
+#onepage .container {
+  text-align: center;
+  padding: 40px 10px;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#onepage h2 {
+  margin-top: 30px;
+  height: 60px;
+  color: var(--amarelo);
+  font-size: 2REM;
+}
+
+#onepage p {
+
+  font-size: 1.5REM;
+  height: 280px;
+  color: rgb(54, 52, 49);
+}
+
+#video iframe {
+  width: 350px;
+  height: 200px;
+}
+
+/*Preços*/
+
+#preços {
+  padding: 60px 20px;
+  background: url(./img/ultima.jpg );
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  font-size: 1rem;
+  height: 300px;
+
+}
+
+.btnn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: var(--azulEscuro);
+  padding: 10px 40px;
+  color: beige;
+  border-radius: 25px;
+  border: 2px solid var(--cinzaclaro);
+
+}
+
+
+#preços .container {
+  text-align: center;
+
+}
+
+#preços h3 {
+  height: 50px;
+  font-size: 2rem;
+  color: var(--amarelodd);
+
+
+
+}
+
+#preços p {
+  height: 120px;
+}
+
+.qrcode {
+
+  display: none;
+
+}
+
+
 
 /* ================= Smartphone Landscape ================= */
-@media (min-width: 576px) {
+@media (min-width: 566px) {
   .container {
     max-width: 570px;
   }
+
 
   /*Destaque*/
   #destaque {
@@ -187,6 +268,7 @@ main h2 {
     align-items: center;
   }
 
+
   #hero {
     text-align: left;
   }
@@ -197,8 +279,19 @@ main h2 {
     margin: 0px 50px 0px 0px;
   }
 
-  .topic {
-    display: none;
+  /*Onepage*/
+
+  #onepage .container {
+
+    align-items: center;
+    padding: 50px 10px;
+    flex: ;
+
+  }
+
+  #video iframe {
+    width: 450px;
+    height: 200px;
   }
 
 }
@@ -219,12 +312,37 @@ main h2 {
   }
 
   main h1 {
-    font-size: 3.90rem;
+    font-size: 2.90rem;
   }
 
   main h2 {
     font-size: 2.90rem;
     margin-bottom: 4.90rem;
+  }
+
+  section h2 {
+    font-size: 2.5rem;
+
+  }
+
+  section p {
+    font-size: 1.60rem;
+  }
+
+  #onepage h2 {
+    font-size: 3.9rem;
+    height: 180px;
+    padding: 40px 0px;
+
+  }
+
+  #onepage p {
+    font-size: 1.9rem;
+  }
+
+  #video iframe {
+    width: 650px;
+    height: 300px;
   }
 
 
@@ -303,10 +421,12 @@ main h2 {
     height: 470px;
   }
 
-  .topic {
-
-    display: flex;
+  /*Preços*/
+  #preços {
+    background-attachment: fixed;
   }
+
+
 
 }
 
