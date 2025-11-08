@@ -290,8 +290,8 @@ main h2 {
   }
 
   #video iframe {
-    width: 450px;
-    height: 200px;
+    width: 560px;
+    height: 315px;
   }
 
 }
@@ -424,6 +424,16 @@ main h2 {
   /*Preços*/
   #preços {
     background-attachment: fixed;
+  }
+
+  #onepage .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #onepage p {
+    margin: 70px;
+
   }
 
 
