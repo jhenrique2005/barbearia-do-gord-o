@@ -36,6 +36,10 @@ body {
   border: 2px solid var(--cinzaclaro);
 }
 
+
+/* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
 /* ================= Mobile / Smartphone ================= */
 
 header {
@@ -177,6 +181,7 @@ main h2 {
   padding: 40px 10px;
   align-items: center;
   flex-direction: column;
+  background-color: #0f1127;
 
 }
 
@@ -185,13 +190,14 @@ main h2 {
   height: 60px;
   color: var(--amarelo);
   font-size: 2REM;
+
 }
 
 #onepage p {
 
   font-size: 1.5REM;
   height: 280px;
-  color: rgb(54, 52, 49);
+  color: rgb(255, 255, 255);
 }
 
 #video iframe {
@@ -233,7 +239,7 @@ main h2 {
 #preços h3 {
   height: 50px;
   font-size: 2rem;
-  color: var(--amarelodd);
+  color: var(--amarelo);
 
 
 
@@ -248,6 +254,65 @@ main h2 {
   display: none;
 
 }
+
+/* Cartão */
+#cortes {
+   display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center; 
+  text-align: center;   
+  background-color: #0f1127;
+}
+
+
+#cortes .container {
+  flex-direction:column;
+  align-items:center;
+
+}
+#cortes img{
+ width: 220px;       
+  height: auto;       
+  border-radius: 10px; 
+
+  
+
+}
+
+
+
+/* Rodapé */
+address {
+  padding: 35px 10px 50px 10px;
+  background: url(img/background2.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--branco);
+}
+
+address a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+address img {
+  padding-top: 15px;
+}
+
+#iconeLocal {
+  display: none;
+}
+
+#dados {
+  margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+  display: none;
+}
+
+
 
 
 
