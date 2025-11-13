@@ -158,8 +158,6 @@ main h2 {
 #hero-text p {
   color: aliceblue;
 
-
-
 }
 
 .topic {
@@ -256,44 +254,65 @@ main h2 {
 }
 
 /* Cartão */
+.btn3 {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--preto);
+  padding: 10px 40px;
+  color: rgb(229, 255, 0);
+  border-radius: 25px;
+  border: 2px solid var(--cinzaclaro);
+}
+
 #cortes {
-   display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;   
-  justify-content: center; 
-  text-align: center;   
+  align-items: center;
+  text-align: center;
   background-color: #0f1127;
+  padding: 30px 20px;
 }
 
 
 #cortes .container {
-  flex-direction:column;
-  align-items:center;
-
-}
-#cortes img{
- width: 220px;       
-  height: auto;       
-  border-radius: 10px; 
-
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
 
 }
 
+#cortes img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  margin: 30px 10px;
+}
+
+#cortes p {
+  margin: 20px;
+}
 
 
 /* Rodapé */
 address {
-  padding: 35px 10px 50px 10px;
-  background: url(img/background2.png);
+  padding: 35px 20px 50px 20px;
+  background: url(./img/ultima.jpg);
   background-size: cover;
   background-position: center;
-  color: var(--branco);
+  color: aliceblue;
+  text-align: left;
 }
 
-address a {
+#address a {
   text-decoration: none;
   color: var(--branco);
+
+}
+
+#address .contato {
+  color: aliceblue;
 }
 
 address img {
@@ -310,6 +329,11 @@ address img {
 
 #googleMaps {
   display: none;
+}
+
+footer {
+  background-color: #4f4f53e5;
+  text-align: center;
 }
 
 
@@ -346,11 +370,11 @@ address img {
 
   /*Onepage*/
 
-  #onepage .container {
+  #onepage {
 
     align-items: center;
     padding: 50px 10px;
-    flex: ;
+    background-color: #0f1127;
 
   }
 
@@ -359,6 +383,12 @@ address img {
     height: 315px;
   }
 
+   .ip {
+    display: flex-;
+    flex-direction:row
+    
+
+  }
 }
 
 /* ================= Tablet Portrait ================= */
@@ -394,30 +424,39 @@ address img {
     font-size: 1.60rem;
   }
 
+  /*onepage*/
+
+  #onepage {
+    background-color: #0f1127;
+    align-items: center;
+    display: flex;
+
+
+  }
+
   #onepage h2 {
     font-size: 3.9rem;
-    height: 180px;
     padding: 40px 0px;
 
   }
 
   #onepage p {
-    font-size: 1.9rem;
+    margin-top: 80px;
+    font-size: 2.9rem;
+    margin-bottom: 200px;
   }
 
   #video iframe {
-    width: 650px;
+
+    width: 550px;
     height: 300px;
   }
-
-
-
-
 
 }
 
 /* ================= Tablet Landscape ================= */
 @media (min-width: 992px) {
+
   .container {
     max-width: 960px;
 
@@ -432,7 +471,23 @@ address img {
     margin-bottom: 6.90rem;
   }
 
+  #onepage .container {
+    text-align: center;
+    align-items: center;
+  }
+
+  /*cartoes*/
+  #cortes .container {
+    flex-direction: row;
+
+  }
+
+  .card {
+    margin-right: 25px;
+  }
+
 }
+
 
 /* ================= Desktop / Notebook ================= */
 @media (min-width: 1200px) {
@@ -491,16 +546,14 @@ address img {
     background-attachment: fixed;
   }
 
+  /*onepage*/
+
   #onepage .container {
     display: flex;
     flex-direction: row;
-  }
-
-  #onepage p {
-    margin: 70px;
+    margin-bottom: 150px;
 
   }
-
 
 
 }
