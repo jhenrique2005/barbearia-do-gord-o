@@ -36,10 +36,6 @@ body {
   border: 2px solid var(--cinzaclaro);
 }
 
-
-/* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
-
-
 /* ================= Mobile / Smartphone ================= */
 
 header {
@@ -77,8 +73,7 @@ nav ul {
   transition: all 0.5s;
 }
 
-/* Ação do menu */
-#check:checked~ul {
+#check:checked ~ ul {
   right: 0;
 }
 
@@ -111,37 +106,37 @@ main .container {
 main h1 {
   color: rgb(214, 214, 79);
   font-family: "koulen", sans-serif;
-  text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
-    0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 5px 10px var(--preto),
+    0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1),
+    0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
   color: rgb(230, 229, 203);
-  font-size: 1.90rem;
+  font-size: 1.9rem;
   font-weight: 900;
-  text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
-    0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 5px 10px var(--preto),
+    0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1),
+    0px 20px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 10%;
 }
-
 
 /*Destaque*/
 #destaque {
   padding: 40px 10px;
-  background: url(./img/ultima.jpg );
+  background: url(./img/ultima.jpg);
   background-size: cover;
   background-position: center;
-
 }
 
 #destaque .container {
-
   flex-direction: column;
 }
 
 #hero {
   text-align: center;
-
 }
 
 #hero img {
@@ -157,7 +152,6 @@ main h2 {
 
 #hero-text p {
   color: aliceblue;
-
 }
 
 .topic {
@@ -171,31 +165,26 @@ main h2 {
   color: aliceblue;
 }
 
-
 /*Onepage*/
-
 #onepage .container {
   text-align: center;
   padding: 40px 10px;
   align-items: center;
   flex-direction: column;
   background-color: #0f1127;
-
 }
 
 #onepage h2 {
   margin-top: 30px;
   height: 60px;
   color: var(--amarelo);
-  font-size: 2REM;
-
+  font-size: 2rem;
 }
 
 #onepage p {
-
-  font-size: 1.5REM;
+  font-size: 1.5rem;
   height: 280px;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 #video iframe {
@@ -204,16 +193,14 @@ main h2 {
 }
 
 /*Preços*/
-
-#preços {
+#precos {
   padding: 60px 20px;
-  background: url(./img/ultima.jpg );
+  background: url(./img/ultima.jpg);
   background-size: cover;
   background-position: center;
   color: aliceblue;
   font-size: 1rem;
   height: 300px;
-
 }
 
 .btnn {
@@ -225,32 +212,24 @@ main h2 {
   color: beige;
   border-radius: 25px;
   border: 2px solid var(--cinzaclaro);
-
 }
 
-
-#preços .container {
+#precos .container {
   text-align: center;
-
 }
 
-#preços h3 {
+#precos h3 {
   height: 50px;
   font-size: 2rem;
   color: var(--amarelo);
-
-
-
 }
 
-#preços p {
+#precos p {
   height: 120px;
 }
 
 .qrcode {
-
   display: none;
-
 }
 
 /* Cartão */
@@ -274,13 +253,11 @@ main h2 {
   padding: 30px 20px;
 }
 
-
 #cortes .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: aliceblue;
-
 }
 
 #cortes img {
@@ -294,13 +271,12 @@ main h2 {
   margin: 20px;
 }
 
-/* ===== RODAPÉ ===== */
+/* RODAPÉ */
 address {
   padding: 30px 10px 15px 20px;
   background-color: var(--azulEscuro);
   color: #ffffff;
 }
-
 
 address .container {
   display: flex;
@@ -314,9 +290,8 @@ address .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: ;
+  text-align: center;
 }
-
 
 #contato a,
 #endereco a {
@@ -325,7 +300,6 @@ address .container {
   text-decoration: none;
   color: #fffbfb;
 }
-
 
 address img {
   width: 36px;
@@ -339,7 +313,6 @@ address img {
   display: none;
 }
 
-
 #googleMaps iframe {
   display: none;
 }
@@ -349,11 +322,10 @@ address img {
   height: 50px;
 }
 
-
-/*  FOOTER  */
+/* FOOTER */
 footer {
   background-color: darkgrey;
-  color: #000000;
+  color: #000;
   padding: 30px 10px;
 }
 
@@ -364,9 +336,6 @@ footer .container {
   flex-wrap: wrap;
   text-align: center;
 }
-
-
-
 
 #topo {
   position: fixed;
@@ -380,27 +349,20 @@ footer .container {
   cursor: pointer;
 }
 
-
-
-
-
 /* ================= Smartphone Landscape ================= */
 @media (min-width: 566px) {
   .container {
     max-width: 570px;
   }
 
-
-  /*Destaque*/
   #destaque {
-    padding: 50px 0px;
+    padding: 50px 0;
   }
 
   #destaque .container {
     flex-direction: row;
     align-items: center;
   }
-
 
   #hero {
     text-align: left;
@@ -409,17 +371,13 @@ footer .container {
   #hero img {
     width: 200px;
     height: 250px;
-    margin: 0px 50px 0px 0px;
+    margin: 0 50px 0 0;
   }
 
-  /*Onepage*/
-
   #onepage {
-
     align-items: center;
     padding: 50px 10px;
     background-color: #0f1127;
-
   }
 
   #video iframe {
@@ -429,80 +387,66 @@ footer .container {
 
   .ip {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
   }
 
- /*  RODAPÉ  */
-    address {
-        padding: 30px 10px 15px 20px;
-        background-color: var(--azulEscuro);
-        color: #ffffff;
-    }
+  address {
+    padding: 30px 10px 15px 20px;
+    background-color: var(--azulEscuro);
+    color: #ffffff;
+  }
 
-
-    address .container {
-        
+  address .container {
     flex-direction: column;
+  }
 
-    }
+  #contato,
+  #endereco,
+  #googleMaps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  #contato a,
+  #endereco a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-    #contato,
-    #endereco,
-    #googleMaps {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        
-    }
+  address img {
+    width: 36px;
+    height: 36px;
+    padding-top: 2px;
+  }
 
+  #contato p,
+  #endereco p {
+    margin: 4px 0;
+  }
 
-    #contato a,
-    #endereco a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: #ffffff;
-    }
+  #googleMaps iframe {
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+  }
 
+  footer {
+    background-color: darkgrey;
+    color: #062206;
+    padding: 30px 20px;
+  }
 
-    address img {
-        width: 36px;
-        height: 36px;
-        padding-top: 2px;
-    }
-
-
-    #contato p,
-    #endereco p {
-        margin: 4px 0;
-    }
-
-
-    #googleMaps iframe {
-        border-radius: 8px;
-        width: 300px;
-        height: 200px;
-    
-    }
-
-    /* FOOTER (parte cinza) */
-    footer {
-        background-color: darkgrey;
-        color: #062206;
-        padding: 30px 20px;
-    }
-
-    footer .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 
 /* ================= Tablet Portrait ================= */
@@ -521,37 +465,31 @@ footer .container {
   }
 
   main h1 {
-    font-size: 2.90rem;
+    font-size: 2.9rem;
   }
 
   main h2 {
-    font-size: 2.90rem;
-    margin-bottom: 4.90rem;
+    font-size: 2.9rem;
+    margin-bottom: 4.9rem;
   }
 
   section h2 {
     font-size: 2.5rem;
-
   }
 
   section p {
-    font-size: 1.60rem;
+    font-size: 1.6rem;
   }
-
-  /*onepage*/
 
   #onepage {
     background-color: #0f1127;
     align-items: center;
     display: flex;
-
-
   }
 
   #onepage h2 {
     font-size: 3.9rem;
-    padding: 40px 0px;
-
+    padding: 40px 0;
   }
 
   #onepage p {
@@ -561,28 +499,24 @@ footer .container {
   }
 
   #video iframe {
-
     width: 550px;
     height: 300px;
   }
-
 }
 
 /* ================= Tablet Landscape ================= */
 @media (min-width: 992px) {
-
   .container {
     max-width: 960px;
-
   }
 
   main h1 {
-    font-size: 5.90rem;
+    font-size: 5.9rem;
   }
 
   main h2 {
-    font-size: 4.90rem;
-    margin-bottom: 6.90rem;
+    font-size: 4.9rem;
+    margin-bottom: 6.9rem;
   }
 
   #onepage .container {
@@ -590,18 +524,14 @@ footer .container {
     align-items: center;
   }
 
-  /*cartoes*/
   #cortes .container {
     flex-direction: row;
-
   }
 
   .card {
     margin-right: 25px;
   }
-
 }
-
 
 /* ================= Desktop / Notebook ================= */
 @media (min-width: 1200px) {
@@ -644,9 +574,7 @@ footer .container {
     height: 85vh;
   }
 
-  /*Destaque*/
   #destaque {
-
     background-attachment: fixed;
   }
 
@@ -655,23 +583,16 @@ footer .container {
     height: 470px;
   }
 
-  /*Preços*/
-  #preços {
+  #precos {
     background-attachment: fixed;
   }
-
-  /*onepage*/
 
   #onepage .container {
     display: flex;
     flex-direction: row;
     margin-bottom: 150px;
-
   }
-
-
 }
-
 
 /* ================= Full HD / 4K ================= */
 @media (min-width: 1400px) {
