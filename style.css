@@ -294,46 +294,90 @@ main h2 {
   margin: 20px;
 }
 
-
-/* Rodapé */
+/* ===== RODAPÉ ===== */
 address {
-  padding: 35px 20px 50px 20px;
-  background: url(./img/ultima.jpg);
-  background-size: cover;
-  background-position: center;
-  color: aliceblue;
-  text-align: left;
+  padding: 30px 10px 15px 20px;
+  background-color: var(--azulEscuro);
+  color: #ffffff;
 }
 
-#address a {
+
+address .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contato,
+#endereco,
+#googleMaps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: ;
+}
+
+
+#contato a,
+#endereco a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  color: var(--branco);
-
+  color: #fffbfb;
 }
 
-#address .contato {
-  color: aliceblue;
-}
 
 address img {
-  padding-top: 15px;
+  width: 36px;
+  height: 36px;
+  padding-top: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-#iconeLocal {
+#iconelocal {
   display: none;
 }
 
-#dados {
-  margin: 30px 0px 15px 0px;
-}
 
-#googleMaps {
+#googleMaps iframe {
   display: none;
 }
 
+#social img {
+  width: 50px;
+  height: 50px;
+}
+
+
+/*  FOOTER  */
 footer {
-  background-color: #4f4f53e5;
+  background-color: darkgrey;
+  color: #000000;
+  padding: 30px 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
+}
+
+
+
+
+#topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#topo img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 
@@ -383,12 +427,82 @@ footer {
     height: 315px;
   }
 
-   .ip {
-    display: flex-;
-    flex-direction:row
-    
-
+  .ip {
+    display: flex;
+    flex-direction: row
   }
+
+ /*  RODAPÉ  */
+    address {
+        padding: 30px 10px 15px 20px;
+        background-color: var(--azulEscuro);
+        color: #ffffff;
+    }
+
+
+    address .container {
+        
+    flex-direction: column;
+
+    }
+
+
+    #contato,
+    #endereco,
+    #googleMaps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+    #contato a,
+    #endereco a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+    address img {
+        width: 36px;
+        height: 36px;
+        padding-top: 2px;
+    }
+
+
+    #contato p,
+    #endereco p {
+        margin: 4px 0;
+    }
+
+
+    #googleMaps iframe {
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+    
+    }
+
+    /* FOOTER (parte cinza) */
+    footer {
+        background-color: darkgrey;
+        color: #062206;
+        padding: 30px 20px;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
 }
 
 /* ================= Tablet Portrait ================= */

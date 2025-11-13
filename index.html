@@ -138,55 +138,48 @@
             </div>
         </div>
     </section>
-    <!-- Rodapé-->
-    <address>
-        <div class="Container ip">
+    <!--RODAPÉ-->
+    <address id="rodape">
+        <div class="container">
             <div id="contato">
-                <a href="https://api.whatsapp.com/send?" target="_blank">
-                    <img src="img/whats.png" title="Abrir no WhatsApp">
-                    <p>(11)01234-5678</p>
+                <a href="https://api.whatsapp.com/send?" target="blank">
+                    <img src="./img/whats.png" alt="whatsapp" title="Abrir no Whatsapp">
+                    <p id="whats">(11) 111234567890000</p>
                 </a>
-
             </div>
-            <div>
-                <a href="https://goo.gl/maps/mLpzArWKPpWZDgaD7"><img src="img/mapa.png" alt="Mapa" id="iconeMapa"></a>
-                <img src="img/local.png" alt="local" id="iconeLocal">
-                <p>Rua Nome da rua, 1234</p>
-                <p>Nome do bairro</p>
-                <p>São Paulo - SP</p>
-                <a href="mailto:seuemail@email.com?subject=HTML5CSS3">
+
+            <div id="endereco">
+                <a href=""><img src="img/mapa.png" alt="Mapa"
+                        id="iconemapa">Rua rio imburana 321</a>
+                
+                <a href="mailto:anneleite2020@gmail.com?subject=Contato">
                     <img src="img/email.png" alt="email" title="Enviar E-mail">
-                    <p>barbeariadogordao@gmail.com</p>
+                    <p>seuemail@gmail.com</p>
                 </a>
+                <a href="https://www.instagram.com" target="_blank" id="social"><img
+                        src="./img/insta.png" alt="instagram">Barbearia do Gordão</a>
             </div>
             <div id="googleMaps">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14631.893034344139!2d-46.56380894999999!3d-23.5334642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1656422745432!5m2!1spt-BR!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14622.316487686754!2d-46.478194476363115!3d-23.619422661571733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6892063f6353%3A0xfcfd13cca7177142!2sAv.%20Sapopemba%2C%2014913%20-%20Jardim%20Adutora%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008310-480!5e0!3m2!1spt-BR!2sbr!4v1762904289399!5m2!1spt-BR!2sbr"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </address>
     <footer>
-        <div class="Container Flex5">
+        <div class="container Flex5">
+            <div id="copyright">
+                <p>&#169;Barbearia do Gordão </p>
 
-            <div id="social">
-                <a href="https://www.youtube.com/c/RoboticapraticaBr" target="_blank"><img src="img/yt (1).png"
-                        alt="youtube"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="img/face (2).png" alt="facebook"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
 
             </div>
         </div>
     </footer>
-    <script>
-        // Atualizar automaticamente o ano (footer - copyright)  
-        let ano = document.getElementById("copyrightYear")
-        let anoAtual = new Date().getFullYear()
-        ano.textContent = anoAtual
-    </script>
-
-
+    <!-- TOPO DO SITE-->
+   <!-- <div id="topo">
+        <a href="#inicio"><img src="./img/barber-shop-5212059_1920.jpg" alt="icon topo"></a>-->
+    </div>
 
 
 </body>
