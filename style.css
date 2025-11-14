@@ -36,6 +36,34 @@ body {
   border: 2px solid var(--cinzaclaro);
 }
 
+/* Cartão   */
+.card {
+  width: 342px;
+  height: 520px;
+  background-color: var(--amarelo);
+  margin-bottom: 25px;
+  border: 2px solid var(--azulEscuro);
+  text-align: center;
+  border-radius: 25px;
+
+}
+
+.card img {
+  border-radius: 35px 35px 0px 0px;
+
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  margin: 15px 0px;
+  color: #ffffff;
+}
+
+.card p {
+  padding: 0px 15px 30px 15px;
+  mar
+}
+
 /* ================= Mobile / Smartphone ================= */
 
 header {
@@ -73,7 +101,7 @@ nav ul {
   transition: all 0.5s;
 }
 
-#check:checked ~ ul {
+#check:checked~ul {
   right: 0;
 }
 
@@ -175,15 +203,14 @@ main h2 {
 }
 
 #onepage h2 {
-  margin-top: 30px;
-  height: 60px;
+  height: 50px;
   color: var(--amarelo);
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 #onepage p {
-  font-size: 1.5rem;
-  height: 280px;
+  font-size: 1.8rem;
+  height: 190px;
   color: #fff;
 }
 
@@ -236,7 +263,7 @@ main h2 {
 .btn3 {
   text-decoration: none;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 700px;
   background-color: var(--preto);
   padding: 10px 40px;
   color: rgb(229, 255, 0);
@@ -327,27 +354,16 @@ footer {
   background-color: darkgrey;
   color: #000;
   padding: 30px 10px;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   text-align: center;
 }
 
-#topo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+
+.Flex5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#topo img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
 
 /* ================= Smartphone Landscape ================= */
 @media (min-width: 566px) {
@@ -434,19 +450,14 @@ footer .container {
     height: 200px;
   }
 
-  footer {
-    background-color: darkgrey;
-    color: #062206;
-    padding: 30px 20px;
-  }
+}
 
-  footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
+.Flex5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 /* ================= Tablet Portrait ================= */
@@ -502,6 +513,22 @@ footer .container {
     width: 550px;
     height: 300px;
   }
+  *rodape*/
+#rodape .container{
+  flex-direction: row;
+  align-items: center;
+  margin-left: 3000px;
+}
+  #googleMaps iframe {
+    padding:30px ;
+  }
+
+  .Flex5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
 }
 
 /* ================= Tablet Landscape ================= */
@@ -522,6 +549,14 @@ footer .container {
   #onepage .container {
     text-align: center;
     align-items: center;
+    padding: 30px 20px;
+  }
+  #onepage h2 {
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+  }
+  #onepage p {
+    font-size: 2.80rem;
   }
 
   #cortes .container {
@@ -531,6 +566,26 @@ footer .container {
   .card {
     margin-right: 25px;
   }
+
+
+  /*rodape*/
+
+  #googleMaps iframe {
+    display: flex;
+  }
+
+
+  #copyright {
+    width: 100;
+    display: flex;
+    justify-content: center;
+}
+.Flex5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 /* ================= Desktop / Notebook ================= */
@@ -592,6 +647,25 @@ footer .container {
     flex-direction: row;
     margin-bottom: 150px;
   }
+
+  #card p {
+    margin-bottom: 300px;
+  }
+/*rodape*/
+#rodape .container{
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+  #googleMaps iframe {
+    padding:30px ;
+  }
+
+  .Flex5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 /* ================= Full HD / 4K ================= */
